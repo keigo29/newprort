@@ -1,108 +1,482 @@
+@import url('https://fonts.cdnfonts.com/css/bauhaus-93');
+
 body{
-    margin: 0px;
-    padding: 0px;
-  background-color: black;
+  background-color: #fafaff;
+  font-size: 12px;
+
 }
-.head-logo {
-  font-weight: 100;
-  letter-spacing: 3px;
-  display: flex;
-  width: 300px;
-  font-size: 18px;
-}
-.headul{
-  width: 190px;
-  list-style-type: none;
-}
+
 header{
-  color: white;
-  font-weight: 100;
-  letter-spacing: 3px;
-  background-image: url('/public/headerback.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
-  height: 100vh;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -webkit-animation: animationZoom 12s linear 0s infinite;
-  animation: animationZoom 12s linear 0s infinite;
-}
-.App-header nav {
-  width: 95%;
+  width: 1158px;
   margin: 0 auto;
+  /* height: 100vh; */
+}
+.mvc{
+  margin: 0 auto;
+}
+a{color: #2bb1f3;}
+.mv{
+  font-family: 'Bauhaus 93', sans-serif;  
+  font-size: 100px;
+  width: 70%;
+  margin: 150px auto;
+  position:relative;                            
+}
+.blcircle > img{
+  width: 20px;
+}
+.mcolor-text{
+  background: #0C9DE4;
+background: linear-gradient(to right, #0C9DE4 12%, #094198 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: #252525;
+text-shadow: 0px 0px 21px rgba(12, 156, 228, 0.378);
+
+}
+.wcircle{
+  width: 131px;
+height: 131px;
+flex-shrink: 0;
+border-radius: 131px;
+background: #ededed;
+box-shadow: -11px 11px 146px 0px #D4E6EF;
+position:relative;
+}
+.bwcircle{
+  width: 241px;
+height: 241px;
+flex-shrink: 0;
+border-radius: 541px;
+background: #fafafa;
+box-shadow: -0px 11px 146px 0px #D4E6EF;
+position:absolute;
+}
+.bcircle2 {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  border-radius: 121px;
+  background: rgb(12,157,228);
+  background: linear-gradient(90deg, rgba(12,157,228,1) 0%, rgba(9,65,152,1) 100%);
+  box-shadow: 0px 11px 61px rgba(12,157,228,0.33);
+  position: absolute;
+
+}
+.blcircle{
+   background-color: #272727;
+   width: 36px;
+   height: 36px;
+   border-radius: 50px;
+   box-shadow: 0px 4px 41px rgba(0, 0, 0, 0.216);
+   margin:0 auto;
+}
+
+.one {
+  top: -66px;
+  left: 89%;
+  z-index: -1;
+  position:absolute;
+}
+.two {
+  top: 83px;
+  right: 73%;
+  z-index: -1;
+  position: absolute;
+}
+.three {
+  right: 95%;
+  top: 399px;
+  z-index: 1;
+  position: absolute;
+}
+.four {
+  left: 89%;
+  top: 370px;
+  z-index: -1;
+  position: absolute;
+}
+.five {
+  left: 89%;
+  top: 800px;
+  z-index: -1;
+  position: absolute;
+}
+.six {
+  width: 180px !important;
+  height: 180px !important;
+  border-radius: 180px !important;
+  right: 98%;
+  top: 1080px;
+  z-index: -1;
+  position: absolute;
+}
+.eight {
+  right: 80%;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+  position: absolute;
+}
+.seven {
+  left: 98%;
+  width: 180px !important;
+  height: 180px !important;
+ 
+  position: absolute;
+}
+.nine {
+  right: 98%;
+  z-index: -1;
+ 
+  position: absolute;
+}
+.ten {
+  width: 160px !important;
+  height: 160px !important;
+  left: 95%;
+  /* top: 570px; */
+  z-index: -1;
+  position: absolute;
+}
+.eleven {
+  width: 160px !important;
+  height: 160px !important;
+  right: 90%;
+  /* top: 570px; */
+  z-index: -1;
+  position: absolute;
+}
+
+.bcircle {
+  width: 196px;
+  height: 196px;
+  flex-shrink: 0;
+  border-radius: 121px;
+  background: rgb(12,157,228);
+  background: linear-gradient(90deg, rgba(12,157,228,1) 0%, rgba(9,65,152,1) 100%);
+  box-shadow: 0px 11px 61px rgba(12,157,228,0.33);
+  position: absolute;
+  overflow: hidden;
+}
+.bcircle2 {
+    width: 91px;
+    height:91px;
+    flex-shrink: 0;
+    border-radius: 121px;
+    background: rgb(12,157,228);
+    background: linear-gradient(90deg, rgba(12,157,228,1) 0%, rgba(9,65,152,1) 100%);
+    box-shadow: 0px 11px 61px rgba(12,157,228,0.33);
+    overflow: hidden;
+    position: absolute;
+}
+.bcircle3 {
+    width: 231px;
+    height:231px;
+    flex-shrink: 0;
+    border-radius: 221px;
+    background: rgb(12,157,228);
+    background: linear-gradient(90deg, rgba(12,157,228,1) 0%, rgba(9,65,152,1) 100%);
+    box-shadow: 0px 11px 61px rgba(12,157,228,0.33);
+    position: absolute;
+    overflow: hidden;
+}
+.ccircle{
+  width: 51px;
+height: 51px;
+flex-shrink: 0;
+border-radius: 71px;
+background: rgb(12,157,228);
+background: linear-gradient(173deg, rgb(255, 255, 255) 0%,rgb(209, 209, 209) 100%);
+box-shadow: 0px 31px 91px rgba(210, 240, 255, 0.33);
+position:absolute;
+overflow: hidden;
+} 
+.mn{
+  position: relative;
+  margin:100px auto;
+  width: 80%;
+  max-width: 835px;
+border-radius: 10px;
+  background-color: #ffff;
+  /* font-family: "ヒラギノ丸ゴ", "Hiragino Kaku Gothic", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
+font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+}
+.service {
+  width: 80%;
+  margin: 0px auto;
+  padding-top: 20px;
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+.cards{
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-
-.headul {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  padding: 0;
+.card{
+  width: 30%;
+  height: 223px;
+  margin-top: 50px;
+  box-shadow: 0px 1px 21px rgba(183, 183, 183, 0.23);
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
-
-.headul li {
-  margin-left: 20px;
-  /* width: 50px; */
+.lcard {
+  /* width: 30%; */
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  height: 223px;
+  margin-top: 50px;
+  /* box-shadow: 0px 1px 21px #31e8ff40; */
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
-
-.head-logo {
-  margin: 0;
+.num{
+  margin:-20px auto;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color:#fff;
+  font-size: 20px;
+  line-height: 2;
+  background: rgb(12,157,228);
+box-shadow: 0px 2px 11px rgba(12, 156, 228, 0.45);
+border-radius: 40px;
 }
-.mv{
-  width: 85%;
-  margin: 100px auto;
-}
-.mvh1{
-  margin-bottom: 0;
-  font-size: 104px;
-  font-family: Inter;
+.c-h{
+  text-align: center;
   font-weight: 900;
+  margin-top: 10px;
 }
-span{
-  color: #FFE101;
+.c-txt{
+  font-size: 1px;
+  text-align: center;
+  margin-top: 10px;
 }
-.mvtxt{
-  margin-top: -25px;
-  letter-spacing: 9px;
+.h3 {
+  background: #0C9DE4;
+  background: linear-gradient(to right, #0C9DE4 12%, #094198 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-family: ui-sans-serif;
+  text-shadow: 0px 5px 11px rgba(12, 156, 228, 0.287);
+  font-weight: bold;
+}
+.my-class  {
+  overflow: auto;
+  width: 100%;
+}
+.my-class table {
+  margin: 0 auto;
+  height: 100%;
+  width: 90%;
+  table-layout: fixed;
+  margin-left: auto;
+  border-collapse: collapse;
+  border-spacing: 1px;
+  text-align: left;
+}
+.my-class caption {
+  caption-side: top;
+  text-align: left;
+}
+.my-class th {
+  background-color: #FFFFFF;
+  /* padding: 20px; */
+  text-align: center;
+  padding-top: 43px;
+}
+.my-class td {
+  border: 2px solid #D9D9D9;
+  color: #000000;
   
 }
- div < .mvtxt {
-  margin-bottom: 15px;
-  
+tr{
+  height: 60px;
 }
-.mvbtm {
-  font-size: 25px;
-  height: 100px;
-  width: 100px;
+.borderhed{
+  border: none;
+}
+thead{
+  border: 0px;
+}
+.sidehed {
+  border: 0px !important;
+  /* font-size: 17px; */
+  text-align: right;
+  font-size: 15px;
+  /* padding: 0px !important; */
+
+  padding-right: 5px;
+}
+.chekmark {
+  margin-top: 29%;
+  margin-left: 8px;
+}
+.c-img{
+  width:84px;
+  margin:0 auto;
+  margin-top: 20px; 
+}
+.name {
+  letter-spacing: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.p-text{
+ color:#747474;
+ line-height:2;
+ height: fit-content;
+}
+.sletter {
+  font-size: 13px;
+}
+.center{
   text-align: center;
 }
-/* .bottmye{
-  width: 100%;
-  height: 10%;
-  background-color: #FFE101;
-  transform: skewY(-10deg);
-  overflow: hidden;
-} */
-.bottmye {
-  position: relative;
-  width: 0;
-  height: 0;
-  border-bottom: 156px solid #FFE101;
-  border-left: 100vw solid transparent;
+.w-text {
+  color: gray;
+  width: 50%;
 }
-
-/* .bottmye::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-top: 100px solid transparent;
-  border-right: 100px solid #FFE101;
-} */
+.w-image{
+  width: 43%;
+  margin-top: -40px;
+}
+.w-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.a-text{
+  font-size: 5px;
+  color: gray;
+}
+.posts{
+  margin-top: -110px;
+}
+@media screen and (max-width: 759px) {
+  .mn{
+    width: 90%;
+    height: 5327px;
+  }
+  header{
+  overflow: hidden;
+   max-width: 400px;
+   margin:0 auto;
+   /* height: 90vh; */
+  }
+  header > img {
+    width: 400px;
+    margin: 0 auto;
+  }
+  .w-wrapper {
+    display: block;
+    
+}
+.cards {
+  display: block;
+  justify-content: space-between;
+}
+.card {
+  width: 100%;
+  height: 223px;
+  margin-top: 50px;
+  box-shadow: 0px 1px 21px rgba(183, 183, 183, 0.23);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+	.wcircle{
+    overflow: hidden;
+  }
+  .bwcircle{
+    overflow: hidden;
+  }
+  .bcircle2 {
+    overflow: hidden;
+  
+  }
+  
+  .bcircle {
+    overflow: hidden;
+  }
+  .bcircle2 {
+    overflow: hidden;
+  }
+  .bcircle3 {
+    overflow: hidden;
+  }
+  .ccircle{
+    overflow: hidden;
+  } 
+  .my-class table {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    margin-left: auto;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+.my-class th{
+  font-size:5px ;
+}
+tr{
+  height: 30px;
+}
+.seven{
+  display: none;
+}
+.mvc {
+  /* margin-top: 60% !important; */
+  /* margin: 0 auto; */
+  overflow: hidden;
+}
+.w-image{
+  width:fit-content;
+  /* margin-top: 50px; */
+margin: 0px auto;
+justify-content: center;
+}
+.w-image > img{
+  height: 150px;
+  width: auto;
+  margin:0 auto;
+  
+}
+.sidehed {
+  border: 0px !important;
+  font-size: 5px;
+  text-align: right;
+  /* padding-left: 30px !important; */
+  /* padding: 0px !important; */
+  padding-left: 0px !important;
+  padding-right: 5px;
+}
+.w-text {
+  color: gray;
+  width: 100%;
+}
+.lcard {
+  border-radius: 10px;
+  height: 355px;
+  margin: 50px auto 20px;
+  padding: 20px;
+  width: 80%;
+}
+.blcircle {
+  background-color: #272727;
+  width: 29px;
+  height: 29px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 41px rgba(0, 0, 0, 0.216);
+  margin: 0 auto;
+}
+.blcircle > img{
+  width: 15px;
+}
+}
