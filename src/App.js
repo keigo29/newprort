@@ -64,7 +64,7 @@ function App() {
   <div className='c-h'>instagram投稿作成
 
 </div>
-  <div className='c-txt'>ユーザーに伝えたい内容を<br/>見やすいデザインに落とし込みます</div>
+  <div className='c-txt'>ユーザーに伝えたい内容を<br/>見やすいデザインに落とし込み投稿デザインを作成致します。</div>
 </div>
 </div>
 <div className='bcircle2 three'></div>
