@@ -13,8 +13,10 @@ import gin from './gin.png'
 import ins from './ins.png'
 import web from './図1.png'
 import icon from './instaicon.png'
+import catapedia from "./catapedia.png"
 
 function App() {
+	const system1 = "<Catapedia/>"
   return (
    <div className='main'>
     <header>
@@ -30,7 +32,7 @@ function App() {
         <div className='name'>石倉圭悟</div>
         <div className='sletter'>Keigo Ishikura</div>
 		<p className='p-text'>
-		2002年生まれの神奈川県出身です。個人事業主として活動しており、コーポレートサイトのコーディングとデザインをメインに仕事しています。<br/>これまで十数社のコーポレートサイトとランディングページの作成に携わりました。<br/>また、現在はフロントエンド開発にも挑戦し、JavaScriptのフレームワークを学習中です。<br/>お客様のニーズに合わせてデザインからコーディングまでワンストップで対応しています
+		2002年生まれの神奈川県出身です。コーポレートサイトのコーディングとデザインをメインに仕事しています。<br/>これまで十数社のコーポレートサイトとランディングページの作成に携わりました。<br/>また、現在はフロントエンド開発にも挑戦し、JavaScriptのフレームワークを学習中です。<br/>お客様のニーズに合わせてデザインからコーディングまでワンストップで対応しています
 		</p>
       </div>
       <div className='service'>
@@ -130,6 +132,26 @@ function App() {
       <div className='service lcard'>
 		
         <h2 className='h3 center'>Works</h2>
+        <h3 className='h3'>Sysmtem</h3>
+        <div className='name'>{system1}</div>
+        <div className='w-wrapper'>
+		<p className='w-text'>
+		nextjs ✕ sqlite3を用いたシステム開発<br/>
+		誰でも図鑑を作成できる情報共有アプリ
+		<p className='a-text'>
+<br/>
+<br/>
+		＊現在作成中
+		</p></p>
+       <div className='w-image'><img src={catapedia} alt=""  width={170}/></div>
+		
+		
+		</div>
+		
+      </div>
+      <div className='service lcard'>
+		
+        {/* <h2 className='h3 center'>Works</h2> */}
         <h3 className='h3'>Slide</h3>
         <div className='name'>資料デザイン</div>
         <div className='w-wrapper'>
