@@ -141,7 +141,7 @@ function App() {
 		誰でも図鑑を作成できる情報共有アプリ<br/>
 		デザインからフロントエンド構築・バックエンド構築<br/>までフルスタックで作成しました。
 		<p className='a-text'>
-		<a href="https://catapedia-810e2e93cfe4.herokuapp.com/" target='__blank'>iU本紹介</a>
+		<a href="https://catapedia-810e2e93cfe4.herokuapp.com/" target='__blank'>Catapedia</a>
 		</p></p>
 		<a href="https://catapedia-810e2e93cfe4.herokuapp.com/" target='__blank'>
        <div className='w-image'><img src={catapedia} alt=""  width={250}/></div>
