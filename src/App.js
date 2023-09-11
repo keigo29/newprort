@@ -134,19 +134,23 @@ function App() {
         <h2 className='h3 center'>Works</h2>
         <h3 className='h3'>Sysmtem</h3>
         <div className='name'>{system1}</div>
+		
         <div className='w-wrapper'>
 		<p className='w-text'>
 		nextjs ✕ sqlite3を用いたシステム開発<br/>
-		誰でも図鑑を作成できる情報共有アプリ
+		誰でも図鑑を作成できる情報共有アプリ<br/>
+		デザインからフロントエンド構築・バックエンド構築<br/>までフルスタックで作成しました。
 		<p className='a-text'>
-<br/>
-<br/>
-		＊現在作成中
+		<a href="https://catapedia-810e2e93cfe4.herokuapp.com/" target='__blank'>iU本紹介</a>
 		</p></p>
-       <div className='w-image'><img src={catapedia} alt=""  width={170}/></div>
-		
+		<a href="https://catapedia-810e2e93cfe4.herokuapp.com/" target='__blank'>
+       <div className='w-image'><img src={catapedia} alt=""  width={250}/></div>
+	   </a>
 		
 		</div>
+
+
+		
 		
       </div>
       <div className='service lcard'>

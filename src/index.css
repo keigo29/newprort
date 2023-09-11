@@ -347,6 +347,7 @@ thead{
 .w-text {
   color: gray;
   width: 50%;
+  line-height: 2;
 }
 .w-image{
   width: 43%;
