@@ -13,6 +13,7 @@ import gin from './gin.png'
 import ins from './ins.png'
 import web from './図1.png'
 import icon from './instaicon.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import catapedia from "./catapedia.png"
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
   return (
    <div className='main'>
     <header>
-    <img src={Mvc} className='mvc' />
+    <LazyLoadImage src={Mvc} className='mvc' />
     <div>
     </div>
     </header>
@@ -45,14 +46,14 @@ function App() {
 
 <div className='card'>
   <div className='num'>01</div>
-  <div className='c-img'><img src={de}alt=""  height={90}/></div>
+  <div className='c-img'><LazyLoadImage src={de}alt=""  height={90}/></div>
   <div className='c-h'>デザイン制作
 </div>
   <div className='c-txt'>依頼主さまとのヒアリングをもとに<br/>資料やUIデザインを作成します。</div>
 </div>
 <div className='card'>
   <div className='num'>02</div>
-  <div className='c-img'><img src={web} alt="" height={90}/></div>
+  <div className='c-img'><LazyLoadImage src={web} alt="" height={90}/></div>
   <div className='c-h'>webサイト制作
 
 </div>
@@ -60,7 +61,7 @@ function App() {
 </div>
 <div className='card'>
   <div className='num'>03</div>
-  <div className='c-img'><img src={icon} alt="" height={90}/></div>
+  <div className='c-img'><LazyLoadImage src={icon} alt="" height={90}/></div>
   <div className='c-h'>instagram投稿作成
 
 </div>
@@ -98,28 +99,28 @@ function App() {
 		<td></td>
 		<td></td>
 		<td> </td>
-    	<td><div className='blcircle'><img src={check} alt=""  className='chekmark'/></div></td>
+    	<td><div className='blcircle'><LazyLoadImage src={check} alt=""  className='chekmark'/></div></td>
 	</tr>
 	<tr>
 		<td className='sidehed'>Html＆css
 </td>
 		<td></td>
 		<td></td>
-		<td><div className='blcircle'><img src={check} alt=""  className='chekmark'/></div></td>
+		<td><div className='blcircle'><LazyLoadImage src={check} alt=""  className='chekmark'/></div></td>
     <td></td>
 	</tr>
 	<tr>
 		<td className='sidehed'>Wordpress</td>
 		<td></td>
 		<td></td>
-		<td><div className='blcircle'><img src={check} alt=""  className='chekmark'/></div></td>
+		<td><div className='blcircle'><LazyLoadImage src={check} alt=""  className='chekmark'/></div></td>
     <td></td>
 	</tr>
 	<tr>
 		<td className='sidehed'>Illustrator
 </td>
 		<td></td>
-		<td><div className='blcircle'><img src={check} alt=""  className='chekmark'/></div></td>
+		<td><div className='blcircle'><LazyLoadImage src={check} alt=""  className='chekmark'/></div></td>
 		<td></td>
     <td></td>
 	</tr>
@@ -144,7 +145,7 @@ function App() {
 		<a href="https://catapedia-810e2e93cfe4.herokuapp.com/" target='__blank'>Catapedia</a>
 		</p></p>
 		<a href="https://catapedia-810e2e93cfe4.herokuapp.com/" target='__blank'>
-       <div className='w-image'><img src={catapedia} alt=""  width={250}/></div>
+       <div className='w-image'><LazyLoadImage src={catapedia} alt=""  width={250}/></div>
 	   </a>
 		
 		</div>
@@ -162,7 +163,7 @@ function App() {
 		<p className='w-text'>
 		商談用資料など多種多様な文字が多く読みにくい資料をアイコンや配置で工夫し、一目で内容を理解できる資料を作ることを心がけました。
 		</p>
-       <div className='w-image'><img src={slide} alt=""  width={250}/></div>
+       <div className='w-image'><LazyLoadImage src={slide} alt=""  width={250}/></div>
 		
 		
 		</div>
@@ -181,7 +182,7 @@ function App() {
 		
 		</p>
 		</p>
-       <div className='w-image posts'><img src={ins} alt=""  width={250}/></div>
+       <div className='w-image posts'><LazyLoadImage src={ins} alt=""  width={250}/></div>
 		
 		
 		</div>
@@ -200,7 +201,7 @@ function App() {
 		＊掲載許可待ちのためモザイクをかけさせて頂いております
 		</p>
 		</p>
-       <div className='w-image'><img src={bar} alt=""  width={250}/></div>
+       <div className='w-image'><LazyLoadImage src={bar} alt=""  width={250}/></div>
 		
 		
 		</div>
@@ -218,7 +219,7 @@ function App() {
 		＊掲載許可待ちのためモザイクをかけさせて頂いております
 		</p>
 		</p>
-       <div className='w-image'><img src={but} alt=""  width={250}/></div>
+       <div className='w-image'><LazyLoadImage src={but} alt=""  width={250}/></div>
 		
 		
 		</div>
@@ -236,7 +237,7 @@ function App() {
 		＊掲載許可待ちのためモザイクをかけさせて頂いております
 		</p>
 		</p>
-       <div className='w-image'><img src={lent} alt=""  width={250}/></div>
+       <div className='w-image'><LazyLoadImage src={lent} alt=""  width={250}/></div>
 		
 		
 		</div>
@@ -254,7 +255,7 @@ function App() {
 		＊掲載許可待ちのためモザイクをかけさせて頂いております
 		</p>
 		</p>
-       <div className='w-image'><img src={gen} alt=""  width={250}/></div>
+       <div className='w-image'><LazyLoadImage src={gen} alt=""  width={250}/></div>
 		
 		
 		</div>
@@ -271,7 +272,7 @@ function App() {
 		＊掲載許可待ちのためモザイクをかけさせて頂いております
 		</p>
 		</p>
-       <div className='w-image'><img src={gin} alt=""  width={250}/></div>
+       <div className='w-image'><LazyLoadImage src={gin} alt=""  width={250}/></div>
 		
 		
 		</div>
@@ -289,7 +290,7 @@ function App() {
 		＊掲載許可待ちのためモザイクをかけさせて頂いております
 		</p>
 		</p>
-       <div className='w-image'><img src={car} alt=""  width={250}/></div>
+       <div className='w-image'><LazyLoadImage src={car} alt=""  width={250}/></div>
 		
 		
 		</div>
