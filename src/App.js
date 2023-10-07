@@ -29,7 +29,7 @@ import kslide from './kslide.png'
 import x from './x.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import catapedia from "./catapedia.png"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { click } from '@testing-library/user-event/dist/click';
 
 function App() {
@@ -39,6 +39,22 @@ function App() {
   const [accounting, setAccounting] = useState(false);
   const [sales, setSales] = useState(false);
   const [other, setOther] = useState(false);
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    // ウィンドウのリサイズ時にウィンドウの幅を更新する
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // コンポーネントがアンマウントされるときにリスナーをクリーンアップ
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const handleButtonClick = (target) => {
     setProblem(target === 'problem');
@@ -68,8 +84,10 @@ function App() {
         <div className='name'>石倉圭悟</div>
         <div className='sletter'>Keigo Ishikura</div>
 		<p className='p-text'>
-		2002年生まれの神奈川県出身です。コーポレートサイトのコーディングとデザインをメインに仕事しています。<br/>これまで十数社のコーポレートサイトとランディングページの作成に携わりました。<br/>また、現在はフロントエンド開発にも挑戦し、JavaScriptのフレームワークを学習中です。<br/>お客様のニーズに合わせてデザインからコーディングまでワンストップで対応しています
+		2002年生まれの神奈川県出身です。コーポレートサイトのコーディングとデザインをメインに仕事しています。これまで十数社のコーポレートサイトとランディングページの作成に携わりました。また、現在はフロントエンド開発にも挑戦し、JavaScriptのフレームワークを学習中です。お客様のニーズに合わせてデザインからコーディングまでワンストップで対応しています<br/>
+    <p className='textl'><img src={ditail} width={90} /></p>
 		</p>
+   
       </div>
       <div className='service'>
         <h3 className='h3'>Service</h3>
@@ -217,15 +235,15 @@ function App() {
     </div>
 					</div>
           {problem && (
-        
+           
             <table className='slideT'>
                 <tr>
-                  <td className='right bottom'><img src={title1} alt=""  /></td>
-                  <td className='left bottom'><img src={aslide} alt=""  /></td>
+                  <td className='right bottom'><LazyLoadImage src={title1} alt=""  /></td>
+                  <td className='left bottom'><LazyLoadImage src={aslide} alt=""  /></td>
                 </tr>
                 <tr>
-                  <td className='right'><img src={bslide} alt=""  /></td>
-                  <td className='left'><img src={cslide} alt=""  /></td>
+                  <td className='right'><LazyLoadImage src={bslide} alt=""  /></td>
+                  <td className='left'><LazyLoadImage src={cslide} alt=""  /></td>
                 </tr>
             </table>
             
@@ -235,8 +253,8 @@ function App() {
         
             <table className='slideT'>
                 <tr>
-                  <td className='right bottom'><img src={dslide} alt=""  /></td>
-                  <td className='left bottom'><img src={eslide} alt=""  /></td>
+                  <td className='right bottom'><LazyLoadImage src={dslide} alt=""  /></td>
+                  <td className='left bottom'><LazyLoadImage src={eslide} alt=""  /></td>
                 </tr>
                 <tr>
                   <td className='right'><img src={fslide} alt=""  /></td>
