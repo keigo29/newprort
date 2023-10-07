@@ -13,11 +13,46 @@ import gin from './gin.png'
 import ins from './ins.png'
 import web from './図1.png'
 import icon from './instaicon.png'
+import ditail from './ditail.png'
+import title1 from './title1.png'
+import aslide from './2slide.png'
+import bslide from './3slide.png'
+import cslide from './1slide.png'
+import dslide from './dslide.png'
+import eslide from './eslide.png'
+import fslide from './fslide.png'
+import gslide from './gslide.png'
+import hslide from './hslide.png'
+import islide from './islide.png'
+import jslide from './jslide.png'
+import kslide from './kslide.png'
+import x from './x.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import catapedia from "./catapedia.png"
+import React, { useState } from 'react';
+import { click } from '@testing-library/user-event/dist/click';
 
 function App() {
 	const system1 = "<Catapedia/>"
+  const [open, setOpen] = useState(false);
+  const [problem, setProblem] = useState(true);
+  const [accounting, setAccounting] = useState(false);
+  const [sales, setSales] = useState(false);
+  const [other, setOther] = useState(false);
+
+  const handleButtonClick = (target) => {
+    setProblem(target === 'problem');
+    setAccounting(target === 'accounting');
+    setSales(target === 'sales');
+    setOther(target === 'other');
+  };
+
+  const clickHandler= ()=>{
+    setOpen(true)
+  }
+  const close= ()=>{
+    setOpen(false)
+  }
   return (
    <div className='main'>
     <header>
@@ -142,7 +177,7 @@ function App() {
 		誰でも図鑑を作成できる情報共有アプリ<br/>
 		デザインからフロントエンド構築・バックエンド構築<br/>までフルスタックで作成しました。
 		<p className='a-text'>
-		<a href="https://catapedia-810e2e93cfe4.herokuapp.com/" target='__blank'>Catapedia</a>
+		<a href="https://catapedia-810e2e93cfe4.herokuapp.com/" target='__blank'><img src={ditail} width={70} /></a>
 		</p></p>
 		<a href="https://catapedia-810e2e93cfe4.herokuapp.com/" target='__blank'>
        <div className='w-image'><LazyLoadImage src={catapedia} alt=""  width={250}/></div>
@@ -155,16 +190,90 @@ function App() {
 		
       </div>
       <div className='service lcard'>
-		
+	  {open && (
+                <div className='modalOverlay'>
+                   <div className='modalF'>
+					<img src={x} alt="" width={60} className='imgX' onClick={close} />
+					<div>
+					<div className='btnWrap'>
+      <div
+        className={problem ? 'active' : 'btn'}
+        onClick={() => handleButtonClick('problem')}
+      >
+        問題資料
+      </div>
+      <div
+        className={accounting ? 'active' : 'btn'}
+        onClick={() => handleButtonClick('accounting')}
+      >
+        会計知識資料
+      </div>
+      <div
+        className={sales ? 'active' : 'btn'}
+        onClick={() => handleButtonClick('sales')}
+      >
+        営業用資料
+        </div>
+    </div>
+					</div>
+          {problem && (
+        
+            <table className='slideT'>
+                <tr>
+                  <td className='right bottom'><img src={title1} alt=""  /></td>
+                  <td className='left bottom'><img src={aslide} alt=""  /></td>
+                </tr>
+                <tr>
+                  <td className='right'><img src={bslide} alt=""  /></td>
+                  <td className='left'><img src={cslide} alt=""  /></td>
+                </tr>
+            </table>
+            
+
+          )}
+          {accounting && (
+        
+            <table className='slideT'>
+                <tr>
+                  <td className='right bottom'><img src={dslide} alt=""  /></td>
+                  <td className='left bottom'><img src={eslide} alt=""  /></td>
+                </tr>
+                <tr>
+                  <td className='right'><img src={fslide} alt=""  /></td>
+                  <td className='left'><img src={gslide} alt=""  /></td>
+                </tr>
+            </table>
+            
+
+          )}
+          {sales && (
+        
+            <table className='slideT'>
+                <tr>
+                  <td className='right bottom'><img src={hslide} alt=""  /></td>
+                  <td className='left bottom'><img src={islide} alt=""  /></td>
+                </tr>
+                <tr>
+                  <td className='right'><img src={jslide} alt=""  /></td>
+                  <td className='left'><img src={kslide} alt=""  /></td>
+                </tr>
+            </table>
+            
+
+          )}
+                   </div>
+                </div>
+            )}
         {/* <h2 className='h3 center'>Works</h2> */}
         <h3 className='h3'>Slide</h3>
         <div className='name'>資料デザイン</div>
         <div className='w-wrapper'>
 		<p className='w-text'>
 		商談用資料など多種多様な文字が多く読みにくい資料をアイコンや配置で工夫し、一目で内容を理解できる資料を作ることを心がけました。
+    <p className='a-text'><div onClick={clickHandler}><img src={ditail} width={70} /></div></p>
 		</p>
        <div className='w-image'><LazyLoadImage src={slide} alt=""  width={250}/></div>
-		
+		   
 		
 		</div>
 		
@@ -176,7 +285,7 @@ function App() {
         <div className='w-wrapper'>
 		<p className='w-text'>
 		本が苦手な人にも本に興味を持ってもらいたいという思いで本の内容をデザインで見やすく紹介するアカウント運用しました。<br/>一年ほど前に運用を停止していますが、現在も100人以上の方にフォローして頂いております。
-		<p className='a-text'><a href="https://www.instagram.com/iu_business_hints/" target='__blank'>iU本紹介</a>
+		<p className='a-text'><a href="https://www.instagram.com/iu_business_hints/" target='__blank'><img src={ditail} width={70} /></a>
 <br/>
 <br/>
 		
@@ -296,8 +405,23 @@ function App() {
 		</div>
 		
       </div>
-     
+     <div>
+		
+	 </div>
 	  </div>
+    <div className='tablewrap'>
+    <table>
+  <tbody>
+  <tr>
+  <th>
+
+  </th>
+  </tr>
+    </tbody>
+          
+    </table>
+
+    </div>
    </div>
   );
 }
