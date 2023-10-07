@@ -35,6 +35,7 @@ import { click } from '@testing-library/user-event/dist/click';
 function App() {
 	const system1 = "<Catapedia/>"
   const [open, setOpen] = useState(false);
+  const [profile, setProfile] = useState(false);
   const [problem, setProblem] = useState(true);
   const [accounting, setAccounting] = useState(false);
   const [sales, setSales] = useState(false);
@@ -66,6 +67,12 @@ function App() {
   const clickHandler= ()=>{
     setOpen(true)
   }
+  const openHandler= ()=>{
+    setProfile(true)
+  }
+  const closeP= ()=>{
+    setProfile(false)
+  }
   const close= ()=>{
     setOpen(false)
   }
@@ -80,12 +87,23 @@ function App() {
 		<div className='bcircle one'></div>
 		<div className='bwcircle two'></div>
 		<div className='service lcard'>
+    {profile && (  
+         <div className='modalOverlayP'>
+           <div className='modalP'>
+  <img src={x} alt="" width={60} className='imgX' onClick={closeP} />
+    
+
+           </div>
+       </div>
+           
+
+         )}
         <h3 className='h3'>About me</h3>
         <div className='name'>石倉圭悟</div>
         <div className='sletter'>Keigo Ishikura</div>
 		<p className='p-text'>
 		2002年生まれの神奈川県出身です。コーポレートサイトのコーディングとデザインをメインに仕事しています。これまで十数社のコーポレートサイトとランディングページの作成に携わりました。また、現在はフロントエンド開発にも挑戦し、JavaScriptのフレームワークを学習中です。お客様のニーズに合わせてデザインからコーディングまでワンストップで対応しています<br/>
-    <p className='textl'><img src={ditail} width={90} /></p>
+    <p className='textl'><img src={ditail} width={90} onClick={openHandler}/></p>
 		</p>
    
       </div>
@@ -238,12 +256,12 @@ function App() {
            
             <table className='slideT'>
                 <tr>
-                  <td className='right bottom'><LazyLoadImage src={title1} alt=""  /></td>
-                  <td className='left bottom'><LazyLoadImage src={aslide} alt=""  /></td>
+                  <td className='right bottom'><img src={title1} alt=""  /></td>
+                  <td className='left bottom'><img src={aslide} alt=""  /></td>
                 </tr>
                 <tr>
-                  <td className='right'><LazyLoadImage src={bslide} alt=""  /></td>
-                  <td className='left'><LazyLoadImage src={cslide} alt=""  /></td>
+                  <td className='right'><img src={bslide} alt=""  /></td>
+                  <td className='left'><img src={cslide} alt=""  /></td>
                 </tr>
             </table>
             
@@ -253,8 +271,8 @@ function App() {
         
             <table className='slideT'>
                 <tr>
-                  <td className='right bottom'><LazyLoadImage src={dslide} alt=""  /></td>
-                  <td className='left bottom'><LazyLoadImage src={eslide} alt=""  /></td>
+                  <td className='right bottom'><img src={dslide} alt=""  /></td>
+                  <td className='left bottom'><img src={eslide} alt=""  /></td>
                 </tr>
                 <tr>
                   <td className='right'><img src={fslide} alt=""  /></td>
