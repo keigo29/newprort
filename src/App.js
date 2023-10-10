@@ -26,13 +26,27 @@ import hslide from './hslide.png'
 import islide from './islide.png'
 import jslide from './jslide.png'
 import kslide from './kslide.png'
+import pro from './pro.png'
 import x from './x.png'
+import xe from './ditailx.png'
+import fdot from './fdot.png'
+import sdot from './sdot.png'
+import dot3 from './3dot.png'
+import dot4 from './4dot.png'
+import dot5 from './5dot.png'
+import want from './want.svg'
+import git from './git.svg'
+import ni from './in.svg'
+import twi from './twi.svg'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import catapedia from "./catapedia.png"
 import React, { useState, useEffect } from 'react';
 import { click } from '@testing-library/user-event/dist/click';
 
 function App() {
+  const ptext ="2002年生まれの神奈川県出身です。コーポレートサイトのコーディングとデザインをメインに仕事しています。これまで十数社のコーポレートサイトとランディングページの作成に携わりました。また、現在はフロントエンド開発にも挑戦し、JavaScriptのフレームワークを学習中です。お客様のニーズに合わせてデザインからコーディングまでワンストップで対応しています";
+  const ntext ="石倉圭悟";
+  const sletter ="ishikura keigo";
 	const system1 = "<Catapedia/>"
   const [open, setOpen] = useState(false);
   const [profile, setProfile] = useState(false);
@@ -90,20 +104,78 @@ function App() {
     {profile && (  
          <div className='modalOverlayP'>
            <div className='modalP'>
-  <img src={x} alt="" width={60} className='imgX' onClick={closeP} />
-    
-
+            <img src={x} alt="" width={60} className='imgX' onClick={closeP} />
+            <div className='hed'>
+              <img src={pro} alt="" width={150} className='pro' />
+              <div className='ntext'>
+              <div className='name'>{ntext}</div>
+              <div className='uni'>情報経営イノベーション専門職大学</div>
+              <div className='icons'>
+               <a href="https://www.wantedly.com/id/keigo_ishikura"><img src={want} alt="" className='want' /></a>
+               <a href="https://www.linkedin.com/in/%E5%9C%AD%E6%82%9F-%E7%9F%B3%E5%80%89-2157ab242/"><img src={ni} alt="" className='in'/></a>
+               <a href="https://github.com/keigo29"><img src={git} alt="" /></a>
+               <a href="https://twitter.com/keigoyuwangnox1"><img src={twi} alt="" /></a>
+            
+              </div>
+              </div>
+              
+            
+            </div>
+            <div className='history'>
+              
+                <div className='dwrap'>
+                <div className='dot'>
+                  <div className='year'>2002</div>
+                  <img src={fdot} alt="" />
+                   <div className='dtxt'>11月29日に<br/>長崎の病院で生まれる</div>
+                </div>
+                <div className='dot'>
+                  <div className='year'>2018</div>
+                  <img src={sdot} alt="" />
+                   <div className='dtxt'>オーストラリア留学<br/>
+(2週間)</div>
+                </div>
+                <div className='dot'>
+                  <div className='year'>2021</div>
+                  <img src={dot3} alt="" />
+                   <div className='dtxt'>情報経営イノベーション<br/>
+専門職大学入学</div>
+                </div>
+                <div className='dot'>
+                  <div className='year'>2021</div>
+                  <img src={dot4} alt="" />
+                   <div className='dtxt'>web系インターン<br/>開始</div>
+                </div>
+                <div className='dot'>
+                  <div className='year'>2023</div>
+                  <img src={dot5} alt="" />
+                   <div className='dtxt'>現在</div>
+                </div>
+          
+                </div>
+                <hr/>
+             </div>
+            <div>
+            favorite
+             </div>
+            <div>
+            favorite
+             </div>
+            <div>
+                
+             </div>
+             
            </div>
        </div>
            
 
          )}
         <h3 className='h3'>About me</h3>
-        <div className='name'>石倉圭悟</div>
-        <div className='sletter'>Keigo Ishikura</div>
+        <div className='name'>{ntext}</div>
+        <div className='sletter'>{sletter}</div>
 		<p className='p-text'>
-		2002年生まれの神奈川県出身です。コーポレートサイトのコーディングとデザインをメインに仕事しています。これまで十数社のコーポレートサイトとランディングページの作成に携わりました。また、現在はフロントエンド開発にも挑戦し、JavaScriptのフレームワークを学習中です。お客様のニーズに合わせてデザインからコーディングまでワンストップで対応しています<br/>
-    <p className='textl'><img src={ditail} width={90} onClick={openHandler}/></p>
+		{ptext}<br/>
+    <p className='textl'><img src={xe} width={90} onClick={openHandler}/></p>
 		</p>
    
       </div>
