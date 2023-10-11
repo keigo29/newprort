@@ -365,6 +365,8 @@ thead{
 }
 .center{
   text-align: center;
+  font-size: 29px;
+  margin-bottom: 15px;
 }
 .w-text {
   color: gray;
