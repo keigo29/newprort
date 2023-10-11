@@ -121,6 +121,7 @@ function App() {
               
             
             </div>
+           
             <div className='history'>
               
                 <div className='dwrap'>
@@ -155,11 +156,8 @@ function App() {
                 </div>
                 <hr/>
              </div>
-            <div>
-            favorite
-             </div>
-            <div>
-            favorite
+             <div className='mn'> 
+             
              </div>
             <div>
                 
@@ -229,10 +227,8 @@ function App() {
 		<th></th>
 		<th>0〜25%</th>
 		<th>25〜50%</th>
-		<th>50〜75%
-</th>
-		<th>75〜100%
-</th>
+		<th>50〜75%</th>
+		<th>75〜100%</th>
 	</tr>
 	</thead>
 	<tbody>
