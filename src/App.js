@@ -102,7 +102,7 @@ function App() {
 		<div className='bwcircle two'></div>
 		<div className='service lcard'>
     {profile && (  
-         <div className='modalOverlayP'>
+         <div className='modalOverlay'>
            <div className='modalP'>
             <img src={x} alt="" width={60} className='imgX' onClick={closeP} />
             <div className='hed'>
