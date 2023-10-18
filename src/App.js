@@ -256,11 +256,11 @@ function App() {
     <td></td>
 	</tr>
 	<tr>
-		<td className='sidehed'>Illustrator
+		<td className='sidehed'>JavaScript
 </td>
 		<td></td>
-		<td><div className='blcircle'><LazyLoadImage src={check} alt=""  className='chekmark'/></div></td>
 		<td></td>
+		<td><div className='blcircle'><LazyLoadImage src={check} alt=""  className='chekmark'/></div></td>
     <td></td>
 	</tr>
 	</tbody>
@@ -277,7 +277,7 @@ function App() {
 		
         <div className='w-wrapper'>
 		<p className='w-text'>
-		nextjs ✕ sqlite3を用いたシステム開発<br/>
+		Nextjs ✕ sqLite3を用いたシステム開発<br/>
 		誰でも図鑑を作成できる情報共有アプリ<br/>
 		デザインからフロントエンド構築・バックエンド構築<br/>までフルスタックで作成しました。
 		<p className='a-text'>
@@ -384,7 +384,7 @@ function App() {
       </div>
 	  <div className='bcircle2 seven'></div>
 	  <div className='service lcard'>  
-	  <h3 className='h3'>instagram投稿作成</h3> 
+	  <h3 className='h3'>Instagram投稿作成</h3> 
         <div className='name'>本紹介sns運用・デザイン</div>
         <div className='w-wrapper'>
 		<p className='w-text'>
