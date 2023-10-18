@@ -251,8 +251,8 @@ function App() {
 	<tr>
 		<td className='sidehed'>Wordpress</td>
 		<td></td>
-		<td></td>
 		<td><div className='blcircle'><LazyLoadImage src={check} alt=""  className='chekmark'/></div></td>
+		<td></td>
     <td></td>
 	</tr>
 	<tr>
