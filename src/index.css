@@ -737,7 +737,7 @@ justify-content: center;
 .modalP {
   min-height: 300px;
   text-align: left;
-  width: 95%;
+  width: 70%;
   
   overflow-x: hidden;
   max-width: 1390px;
@@ -955,7 +955,7 @@ td > img{
 }
 .dtxt{
   color: #868686;
-  font-size: 0.4rem;
+  font-size: 10px;
 }
 hr{
   margin-top:50px;
@@ -970,6 +970,11 @@ hr{
  width: 62px;
 }
 @media screen and (max-width: 759px) {
+  .modalP{
+    height: 593px;
+    width: 95%;
+    overflow: hidden;
+  }
   .dot > img{
     width: 45px;
    }
@@ -1015,8 +1020,9 @@ hr{
   hr{
     transform: rotate( -90deg );
     top: -189px;
-    right: 81px;
+    right: 80px;
     width: 213px
+
   }
 }
 .icons{
